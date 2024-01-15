@@ -16,7 +16,7 @@ export function getFetchUrl(settings: IGitSourceSettings): string {
   }
 
   // "origin" is SCHEME://HOSTNAME[:PORT]
-  return `${serviceUrl}/${encodedOwner}/${encodedName}`
+  return `${serviceUrl}/gitea/${encodedOwner}/${encodedName}`
 }
 
 export function getServerUrl(url?: string): URL {
